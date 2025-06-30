@@ -16,7 +16,7 @@ This repository contains my learning files from the first four weeks of studying
 - Variables 
 
 **Files:**
-- [includes.js](./week1/includes.js)
+- [includes.js](./week1/js/includes.js)
 - [intro.js](./week1/intro.js)
 - [intro1.js](./week1/intro1.js)
 - [index.js](./week1/index.js)
