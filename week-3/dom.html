@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <form action="" id="myForm"></form>
+    <label for="username">enter username</label>
+    <input type="text" id="username" name="username">
+    <input type="submit">
+
+    <h1 class="title" id="heading-one">hi 1</h1>
+    <h1 class="title" id="heading-two">hi 2</h1>
+    <h1 class="title" id="heading-three">hi 3</h1>
+    <h1>hi 4</h1>
+    <!-- <script src="/week-3/dom.js"> -->
+
+        <button id="button">click me</button>
+        <button id="y4chick">submit Request</button>
+    </script>
+    <script>
+        let subHeading;
+        for(let i = 0; i<10; i++){
+        subHeading = document.createElement('h2');
+        subHeading.className = 'heading-2';
+        subHeading.id = 'hood';
+        subHeading.textContent = 'this is a subheading';
+        subHeading.style.fontSize = '20px';
+        subHeading.style.color = 'purple';
+        document.body.appendChild(subHeading);
+        }
+        
+        //you have to make sure its programmable by using document.
+        //  const button = document.getElementById('button');
+        //  button.addEventListener('click', function(){
+        //     alert(`hello from the other side`)
+        //  });
+
+        //  const button = document.getElementById('y4chick');
+        //  button.addEventListener('click', function(){
+        //     alert(`you have submitted`)
+        //  });
+         const form = document.getElementById('myForm');
+          form.addEventListener('submit', function(event){
+            event.preventDefault
+            console.log(`automatic form submission blocked`)
+          })
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--tables have table heads, table rows and table data-->
+    <!--can get a table cheat sheet online too-->
+    <!-- <table>
+        <tr>
+            <th>hi</th>
+            <th>hi</th>
+            <th>hi</th>
+        </tr>
+        <tr>
+            <td>bye</td>
+            <td>bye</td>
+            <td>bye</td>
+        </tr> the more headings you have the more collumns, the more rows the more rows-->
+    <!-- </table> -->
+
+    <h2>YOUNG4CHICK REQUEST FORM</h2>
+
+    <form action="" id="requestForm">
+        <label for="farmer name">farmer name</label>
+        <input type="text" id="farmerName" placeholder="insert name here">
+
+        <label for="farmer age">farmer age</label>
+        <input type="number" placeholder="20-30 years" id="age">
+
+        <label for="number of chicks">number of chicks</label>
+        <input type="number" id="quantity" placeholder="number of chicks (100-500)"> <!--you will correct this when you do proj-->
+
+        <select name="type of chick" id="typeOfChick">
+            <option value="">select chick type</option>
+            <option value="broiler">broiler</option>
+            <option value="layer">layer</option>
+        </select>
+
+        <button type="submit">Submit Request</button> <!--shouldn't always use alerts put an empty para so instead of alerting a red line shows you where error is-->
+        <p id="errorMsg" class="error"></p> <!--class of error in case you want to give it css so it is red--> 
+
+        
+
+    </form>
+
+    <form action="" id="form2">
+
+    </form>
+
+    <form action="" id="form3">
+
+    </form>
+
+     
+
+     <table id="table1">
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>username</th>
+        </tr>
+        
+     </table> <!--when building with js you need a table and form as empty as poss because data is coming from user-->
+    <!--in real life, tables and forms fill themselves-->
+<h2>YOUNG4CHICK - ADMIN DASHBOARD</h2>
+    <table class="table" id="requestTable">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Age</th>
+      <th scope="col">Chick Type</th>
+      <th scope="col">Quantity</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  </tbody>
+</table>
+
+
+    
+    <script> //this can be either in a js file or in html - we look at it through the online console
+        console.log(document.forms[0]); // there is a forms object inbuilt in java, you use arrays and square brackets to see it
+        // to see how long it is you can do document.forms.length
+        // to know its id document.forms[2].id - the id is form3
+        //you can also use document.getElementByID
+        const firstform = document.getElementById('form1');
+
+        //this code is for the table, above was for the form
+        const table = document.getElementById('table1') 
+        let row1 = table.insertRow(); // this is an equivalent of tr - can only be done after user has submitted, so as you submit it becomes bigger
+        let cell1 = row1.insertCell(0); // forms are arrays but tables are NOT arrays. You put in a number in the same way as forms but it's not an array of many forms so no square brackets 
+        let cell2 = row1.insertCell(1);
+        let cell3 = row1.insertCell(2);
+        cell1.textContext = "Sanyu"; // in real life these should be coming from the form that asks for name age and gender then when the person submits it adds a new row and captures the values
+        cell2.textContext = "25";
+        cell3.textContext = "skimuli";
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script> 
+    <script src="/week-3/forms-and-tables.js"></script>
+</body>
+
+</html>
