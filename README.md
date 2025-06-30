@@ -5,7 +5,7 @@ This repository contains my learning files from the first four weeks of studying
 
 ---
 
-## 📁 [Week 1 – JavaScript Fundamentals](./week1)
+## 📁 [Week 1 – JavaScript Fundamentals](./week-1)
 
 **Topics Covered:**
 - Introduction to JavaScript
@@ -31,7 +31,7 @@ Laying the groundwork with basic syntax, data types, and how JavaScript fits int
 
 ---
 
-## 📁 [Week 2 – Logic, Control Flow & Objects](./week2)
+## 📁 [Week 2 – Logic, Control Flow & Objects](./week-2)
 
 **Topics Covered:**
 - Conditional statements (`if`, `else`, `switch`)
@@ -51,7 +51,7 @@ Controlling the flow of logic in programs, working with dynamic structures like 
 
 ---
 
-## 📁 [Week 3 – DOM Manipulation & Storage](./week3)
+## 📁 [Week 3 – DOM Manipulation & Storage](./week-3)
 
 **Topics Covered:**
 - The Document Object Model (DOM)
@@ -73,7 +73,7 @@ Making web pages interactive using the DOM, capturing user input, and storing da
 
 ---
 
-## 📁 [Week 4 – Advanced JavaScript Concepts](./week4)
+## 📁 [Week 4 – Advanced JavaScript Concepts](./week-4)
 
 **Topics Covered:**
 - Asynchronous JavaScript (`fetch`, Promises)
